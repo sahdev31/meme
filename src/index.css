@@ -61,11 +61,26 @@ code {
 
 .meme {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .meme--image {
-  max-width: 100%;
-  border-radius: 3px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 30rem;
+}
+
+@media only screen and (min-width: 500px ) {
+  .meme--image {
+    width: 10rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .meme--image {
+    width: 35rem;
+  }
 }
 
 .meme--text {
